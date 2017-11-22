@@ -66,7 +66,6 @@ class BaseConsistentHash
             if ($cacheKey <= $key)
             {
                 $this->count[$this->tempNodes[$key]]++;
-                //                echo '{' . $this->tempNodes[$key] . '}' . PHP_EOL;
                 return $this->tempNodes[$key];
             }
         }
